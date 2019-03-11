@@ -9,13 +9,13 @@
 /**
  * 
  */
-UCLASS( meta = (BlueprintSpawnableComponent))
+UCLASS( meta = (BlueprintSpawnableComponent) )
 class BATTLETANK_API UTankBarrel : public UStaticMeshComponent
 {
 	GENERATED_BODY()
 	
 public:
-	// -1 is max downwards speed, +1 is max up movement
+	// -1 is max downwards speed, +1 is max up speed
 	void Elevate(float RelativeSpeed);
 
 private:
